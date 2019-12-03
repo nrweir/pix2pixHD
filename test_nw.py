@@ -36,7 +36,7 @@ else:
     from run_engine import run_trt_engine, run_onnx
 
 for i, data in enumerate(dataset):
-    for idx in range(10):
+    for idx in range(opt.ntest):
         if i >= opt.how_many:
             break
         if opt.data_type == 16:
